@@ -1,5 +1,5 @@
 ---
-version: '3'
+version: '3.7'
 
 services:
   prometheus:
@@ -46,6 +46,7 @@ services:
   nginx:
     build: nginx
     image: observability-proxy:latest
+    container_name: proxy
     restart: always
     environment:
       WAIT_HOSTS: prometheus:9090,grafana:3000
