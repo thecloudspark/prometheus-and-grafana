@@ -15,3 +15,14 @@ To login, use initial creds:
 username: admin
 password: admin
 ```
+
+To add prometheus as datasource, use the following:
+```bash
+# HTTP
+url: http://prometheus:9090
+
+# Auth
+# Enable Basic Auth and use the following Details
+username: admin
+password: admin
+```
